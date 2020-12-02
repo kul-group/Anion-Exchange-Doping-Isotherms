@@ -83,7 +83,7 @@ def plot_halotherms(X_data,alpha_data,alpha_func,params,title="Data with Best Fi
     
     fig.suptitle(title)
     ax_flat[1].set_xlabel(r"$FeCl_3$ (mM)")
-    ax_flat[1].set_ylabel(r"Doped Sites/Total Sites $(\alpha)$")
+    ax_flat[1].set_ylabel(r"Doped Sites/Total Sites $(\theta)$")
     ax_flat[0].set_xlabel(r"$FeCl_3$ (mM)")
     ax_flat[0].set_ylabel(r"$(\Theta)$")
     ax_flat[0].set_xlim((0.05,5))
@@ -101,7 +101,7 @@ def plot_data_and_fit_ian(c_FeCl3,alpha,modelFun,modelParams,title="Data with be
     ax[0].semilogx(x_sim, y_sim,'--')  # plots fit
     ax[0].semilogx(c_FeCl3, alpha,'o') # plots datapoints 
     ax[0].set_xlabel(r"$FeCl_3$ Solution Concentration (mM) ")
-    ax[0].set_ylabel(r"Doped Sites/Total Sites $(\alpha)$")
+    ax[0].set_ylabel(r"Doped Sites/Total Sites $(\theta)$")
     #plot data and fit (semilogy plot)
     ax[1].plot(x_sim, y_sim,'--')  # plots fit
     ax[1].plot(c_FeCl3, alpha,'o') # plots datapoints 
